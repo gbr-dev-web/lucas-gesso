@@ -34,7 +34,8 @@ export default function Home() {
     "PERFIL DE LED",
   ];
   return (
-    <>
+    
+    <main>
       <nav
         aria-label="Main navigation"
         className={`w-full px-4 py-3 bg-green-600 flex justify-between items-center`}
@@ -284,6 +285,6 @@ export default function Home() {
           Gabriel Martins
         </a>
       </footer>
-    </>
+    </main>
   );
 }
