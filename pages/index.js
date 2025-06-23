@@ -10,7 +10,6 @@ const ImageSliderUnit = dynamic(() => import("../components/ImageSliderUnit"), {
   loading: () => <p>Carregando...</p>,
 });
 
-
 const bree = Bree_Serif({
   subsets: ["latin"],
   weight: ["400"], // ou outras variações que precisar
@@ -70,21 +69,40 @@ export default function Home() {
         </h3>
         <div className="grid grid-cols-2 gap-3 px-7">
           <ImageSliderUnit
-            images={["/assets/servicos/lucasS1.jpg", "/assets/servicos/lucasS2.jpg"]}
+            images={[
+              "/assets/servicos/lucasS1.jpg",
+              "/assets/servicos/lucasS2.jpg",
+            ]}
             alt="Imagem 1"
           />
           <ImageSliderUnit
-            images={["/assets/servicos/lucasS3.jpg", "/assets/servicos/lucasS4.jpg"]}
+            images={[
+              "/assets/servicos/lucasS3.jpg",
+              "/assets/servicos/lucasS4.jpg",
+            ]}
             alt="Imagem 2"
           />
           <ImageSliderUnit
-            images={["/assets/servicos/lucasS5.jpg", "/assets/servicos/lucasS6.jpg"]}
+            images={[
+              "/assets/servicos/lucasS5.jpg",
+              "/assets/servicos/lucasS6.jpg",
+            ]}
             alt="Imagem 3"
           />
           <ImageSliderUnit
-            images={["/assets/servicos/lucasS7.jpg", "/assets/servicos/lucasS8.jpg"]}
+            images={[
+              "/assets/servicos/lucasS7.jpg",
+              "/assets/servicos/lucasS8.jpg",
+            ]}
             alt="Imagem 4"
           />
+        </div>
+        <div className="self-stretch px-2.5 inline-flex flex-col justify-start items-start gap-[5px]">
+          <div className="px-2.5 bg-green-600 rounded-2xl shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] flex justify-center items-center gap-2.5">
+            <div className="justify-start text-white text-sm font-semibold font-['Open_Sans']">
+              FORRO
+            </div>
+          </div>
         </div>
       </section>
     </>
