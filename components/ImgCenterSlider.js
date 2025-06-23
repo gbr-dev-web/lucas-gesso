@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 
 const images = [
   "/lucas-gesso/assets/lucasCentro.jpg",
-  "/lucas-gesso/assets/LucasCenter1.jpg",
-  "/lucas-gesso/assets/LucasCenter2.jpg",
+  "/lucas-gesso/assets/lucasCenter1.jpg",
+  "/lucas-gesso/assets/lucasCenter2.jpg",
 ];
 
 export default function ImageSlider() {
