@@ -275,7 +275,14 @@ export default function Home() {
       </section>
 
       <footer className="w-full bg-black text-white text-center py-2 text-sm italic cursor-pointer">
-        Criado por <a href="https://gbr-dev-web.github.io/">Gabriel Martins</a>
+        Criado por
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://gbr-dev-web.github.io/"
+        >
+          Gabriel Martins
+        </a>
       </footer>
     </>
   );
