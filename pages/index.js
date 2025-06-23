@@ -1,5 +1,15 @@
 import { Bree_Serif, Open_Sans } from "next/font/google";
-import ImageSlider from '../components/ImgCenterSlider';
+import dynamic from "next/dynamic";
+
+const ImageSlider = dynamic(() => import("../components/ImgCenterSlider"), {
+  ssr: false,
+  loading: () => <p>Carregando...</p>,
+});
+const ImageSliderUnit = dynamic(() => import("../components/ImageSliderUnit"), {
+  ssr: false,
+  loading: () => <p>Carregando...</p>,
+});
+
 
 const bree = Bree_Serif({
   subsets: ["latin"],
@@ -44,12 +54,38 @@ export default function Home() {
           Maranguape
         </p>
         <button
-          onClick={() => {}}
+          onClick={() => {
+            window.open("https://wa.me/5585985624095", "_blank");
+          }}
           className={`self-center p-2.5 bg-green-600 rounded-[30px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] justify-center items-center gap-2.5 animate-wiggle-x transition-all duration-300 hover:bg-green-500 hover:scale-105 active:scale-95 text-white text-sm font-bold ${open.className}`}
         >
           SOLICITE JÁ UM ORÇAMENTO
         </button>
         <ImageSlider />
+      </section>
+
+      <section className="mt-4 px-4 flex flex-col gap-4">
+        <h3 className={`${bree.className} text-xl w-full text-center`}>
+          Meus Serviços
+        </h3>
+        <div className="grid grid-cols-2 gap-3 px-7">
+          <ImageSliderUnit
+            images={["/assets/servicos/lucasS1.jpg", "/assets/servicos/lucasS2.jpg"]}
+            alt="Imagem 1"
+          />
+          <ImageSliderUnit
+            images={["/assets/servicos/lucasS3.jpg", "/assets/servicos/lucasS4.jpg"]}
+            alt="Imagem 2"
+          />
+          <ImageSliderUnit
+            images={["/assets/servicos/lucasS5.jpg", "/assets/servicos/lucasS6.jpg"]}
+            alt="Imagem 3"
+          />
+          <ImageSliderUnit
+            images={["/assets/servicos/lucasS7.jpg", "/assets/servicos/lucasS8.jpg"]}
+            alt="Imagem 4"
+          />
+        </div>
       </section>
     </>
   );

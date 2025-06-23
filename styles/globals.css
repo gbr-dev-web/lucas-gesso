@@ -1,32 +1,28 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-    min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-p {
-  font-family: "Open Sans", sans-serif;
-}
-
 /* animacao botao */
 @keyframes wiggle-x {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(5px);
-    }
+  0%,
+  100% {
+    transform: translateX(0);
   }
-  
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
   .animate-wiggle-x {
     animation: wiggle-x 1.2s ease-in-out infinite;
   }
-  
+}
