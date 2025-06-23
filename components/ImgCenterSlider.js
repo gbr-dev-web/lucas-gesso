@@ -2,9 +2,9 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const images = [
-  "/assets/lucasCentro.jpg",
-  "/assets/LucasCenter1.jpg",
-  "/assets/LucasCenter2.jpg",
+  "/lucas-gesso/assets/lucasCentro.jpg",
+  "/lucas-gesso/assets/LucasCenter1.jpg",
+  "/lucas-gesso/assets/LucasCenter2.jpg",
 ];
 
 export default function ImageSlider() {
