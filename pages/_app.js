@@ -49,22 +49,22 @@ export default function MyApp({ Component, pageProps }) {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="/lucas-gesso/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/lucas-gesso/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/lucas-gesso/favicon-16x16.png"
         />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="icon" href="/lucas-gesso/favicon.ico" />
+        <link rel="manifest" href="/lucas-gesso/site.webmanifest" />
       </Head>
 
       <Component {...pageProps} />

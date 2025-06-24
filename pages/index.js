@@ -34,7 +34,6 @@ export default function Home() {
     "PERFIL DE LED",
   ];
   return (
-    
     <main>
       <nav
         aria-label="Main navigation"
@@ -145,7 +144,10 @@ export default function Home() {
           {/* whatsapp */}
           <div
             onClick={() => {
-              window.open("https://wa.me/5585985624095", "_blank");
+              window.open(
+                "https://wa.me/5585985624095?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços.",
+                "_blank"
+              );
             }}
             className="px-[5px] py-0.5 w-auto outline-1 outline-offset-[-1px] outline-black flex justify-center items-center gap-0.5 animate-wiggle-x transition-all duration-300 hover:scale-105 active:scale-95"
           >
@@ -276,7 +278,7 @@ export default function Home() {
       </section>
 
       <footer className="w-full bg-black text-white text-center py-2 text-sm italic cursor-pointer">
-        Criado por {" "}
+        Criado por{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"
