@@ -276,7 +276,7 @@ export default function Home() {
       </section>
 
       <footer className="w-full bg-black text-white text-center py-2 text-sm italic cursor-pointer">
-        Criado por
+        Criado por {" "}
         <a
           target="_blank"
           rel="noopener noreferrer"
