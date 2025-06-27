@@ -7,18 +7,18 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         {/* Título padrão (recomendado sobrescrever em cada página) */}
-        <title>Lucas Gesso | Gesseiro Profissional</title>
+        <title>Lucas Gesso | Gesseiro Profissional em Fortaleza</title>
 
         {/* SEO base */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Serviços de gesseiro em alto padrão com Lucas Gesso. Drywall, sancas, forros e mais. Atendimento em Fortaleza e região."
+          content="Gesseiro em Fortaleza com mais de 10 anos de experiência. Especialista em forro, sanca, drywall e projetos personalizados em gesso. Orçamento rápido e sem compromisso."
         />
         <meta
           name="keywords"
-          content="Gesso, Gesseiro, Drywall, Forro, Sanca, Reformas, Lucas Gesso, Fortaleza"
+          content="gesseiro em Fortaleza, gesso Fortaleza, forro de gesso, sanca, drywall, gesseiro profissional, Gesseiro em maracanau"
         />
         <meta name="author" content="Gabriel Martins" />
 
